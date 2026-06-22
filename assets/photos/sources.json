@@ -1,0 +1,98 @@
+[
+  {
+    "day": "8/17",
+    "file": "day17_amsterdam_prinsengracht.jpg",
+    "title": "Amsterdam canals / Prinsengracht",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Prinsengracht.jpg/1280px-Prinsengracht.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Prinsengracht.jpg",
+    "local_path": "assets/photos/day17_amsterdam_prinsengracht.jpg",
+    "size": [
+      1280,
+      853
+    ]
+  },
+  {
+    "day": "8/18",
+    "file": "day18_rijksmuseum.jpg",
+    "title": "Rijksmuseum exterior",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/South_facade_of_the_Rijksmuseum_Amsterdam_%28DSCF0528%29.jpg/1280px-South_facade_of_the_Rijksmuseum_Amsterdam_%28DSCF0528%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:South_facade_of_the_Rijksmuseum_Amsterdam_(DSCF0528).jpg",
+    "local_path": "assets/photos/day18_rijksmuseum.jpg",
+    "size": [
+      1236,
+      900
+    ]
+  },
+  {
+    "day": "8/19",
+    "file": "day19_delft_old_town.jpg",
+    "title": "Delft old town view",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Delft_Blick_von_der_Nieuwe_Kerk_auf_die_Oude_Kerk_1.jpg/1280px-Delft_Blick_von_der_Nieuwe_Kerk_auf_die_Oude_Kerk_1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Delft_Blick_von_der_Nieuwe_Kerk_auf_die_Oude_Kerk_1.jpg",
+    "local_path": "assets/photos/day19_delft_old_town.jpg",
+    "size": [
+      1280,
+      879
+    ]
+  },
+  {
+    "day": "8/20",
+    "file": "day20_kroller_muller_sculpture_garden.jpg",
+    "title": "Kröller-Müller sculpture garden",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/KMM_Noguchi_02.JPG/1280px-KMM_Noguchi_02.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:KMM_Noguchi_02.JPG",
+    "local_path": "assets/photos/day20_kroller_muller_sculpture_garden.jpg",
+    "size": [
+      675,
+      900
+    ]
+  },
+  {
+    "day": "8/21",
+    "file": "day21_posbank_veluwezoom.jpg",
+    "title": "Posbank / Veluwezoom landscape",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/PosbankSummerLandscape_-_Flickr_-_Ruben_Holthuijsen.jpg/1280px-PosbankSummerLandscape_-_Flickr_-_Ruben_Holthuijsen.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:PosbankSummerLandscape_-_Flickr_-_Ruben_Holthuijsen.jpg",
+    "local_path": "assets/photos/day21_posbank_veluwezoom.jpg",
+    "size": [
+      1200,
+      900
+    ]
+  },
+  {
+    "day": "8/22",
+    "file": "day22_texel_de_slufter.jpg",
+    "title": "De Slufter, Texel",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Texel_De_Slufter_04.jpg/1280px-Texel_De_Slufter_04.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Texel_De_Slufter_04.jpg",
+    "local_path": "assets/photos/day22_texel_de_slufter.jpg",
+    "size": [
+      1280,
+      853
+    ]
+  },
+  {
+    "day": "8/23",
+    "file": "day23_teso_ferry_texel.jpg",
+    "title": "TESO ferry near Texel",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Texel_-_De_Hors_-_View_East_towards_TESO_Ferries.jpg/1280px-Texel_-_De_Hors_-_View_East_towards_TESO_Ferries.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Texel_-_De_Hors_-_View_East_towards_TESO_Ferries.jpg",
+    "local_path": "assets/photos/day23_teso_ferry_texel.jpg",
+    "size": [
+      1200,
+      900
+    ]
+  },
+  {
+    "day": "8/24",
+    "file": "day24_schiphol_terminal.jpg",
+    "title": "Schiphol terminal",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Amsterdam_Schiphol_0018.jpg/1280px-Amsterdam_Schiphol_0018.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Amsterdam_Schiphol_0018.jpg",
+    "local_path": "assets/photos/day24_schiphol_terminal.jpg",
+    "size": [
+      1280,
+      853
+    ]
+  }
+]

@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>荷兰 8/17–8/24 7天行程备忘录（自然 + 城市人文平衡版）</title>
+  <style>
+
+:root {
+  color-scheme: light;
+  --bg: #f6f4ef;
+  --panel: #ffffff;
+  --panel-muted: #ece7dd;
+  --text: #1f2933;
+  --subtle: #62717f;
+  --line: #d8d1c3;
+  --accent: #0e6f68;
+  --accent-dark: #084c47;
+  --accent-soft: #d9ebe8;
+  --warm: #b76e35;
+  --shadow: 0 18px 45px rgba(31, 41, 51, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent-dark);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.site-header {
+  background: linear-gradient(135deg, #0f766e 0%, #155e75 55%, #7c3f24 100%);
+  color: #fff;
+  padding: 56px 0 44px;
+}
+
+.header-grid {
+  display: block;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.site-header .eyebrow,
+.site-header a,
+.site-header .update-note {
+  color: #e8fbf8;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
+
+h1 {
+  max-width: 840px;
+  font-size: 2.7rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.update-note {
+  margin: 0.35rem 0;
+}
+
+.content-panel,
+.day-card,
+.transport-grid article {
+  background: var(--panel);
+  border: 1px solid rgba(216, 209, 195, 0.9);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+dt {
+  color: var(--subtle);
+  font-weight: 700;
+}
+
+dd {
+  margin: 0;
+}
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  padding: 10px 16px;
+  background: rgba(246, 244, 239, 0.94);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+
+.site-nav a {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0 14px;
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  background: var(--accent-soft);
+}
+
+.section {
+  padding: 58px 0;
+}
+
+.section.muted {
+  background: var(--panel-muted);
+}
+
+.section-heading {
+  margin-bottom: 20px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(340px, 1.05fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.map-frame {
+  margin: 0;
+  overflow: hidden;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.map-frame img {
+  width: 100%;
+}
+
+figcaption {
+  padding: 10px 14px;
+  color: var(--subtle);
+  font-size: 0.9rem;
+}
+
+.table-wrap {
+  margin: 18px 0 28px;
+  overflow-x: auto;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+th,
+td {
+  padding: 13px 14px;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+th {
+  background: #f2efe7;
+  color: var(--accent-dark);
+  font-size: 0.84rem;
+  text-transform: uppercase;
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
+.day-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.day-card {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  overflow: hidden;
+}
+
+.day-image {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  object-fit: cover;
+}
+
+.day-card-body {
+  padding: 22px;
+}
+
+.day-title-row {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.day-date {
+  margin: 0;
+  color: var(--warm);
+  font-weight: 900;
+}
+
+.day-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 10px 0 12px;
+}
+
+.day-facts div {
+  padding: 10px 12px;
+  background: #f7f4ee;
+  border-radius: 8px;
+}
+
+.summary-line {
+  margin: 0 0 16px;
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.markdown-body > *:first-child,
+.content-panel > *:first-child {
+  margin-top: 0;
+}
+
+.markdown-body > *:last-child,
+.content-panel > *:last-child {
+  margin-bottom: 0;
+}
+
+blockquote {
+  margin: 14px 0;
+  padding: 12px 14px;
+  border-left: 4px solid var(--accent);
+  background: #f7f4ee;
+  color: var(--subtle);
+}
+
+.content-panel {
+  padding: 24px;
+  overflow-x: auto;
+}
+
+.transport-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.transport-grid article {
+  padding: 16px;
+  box-shadow: none;
+}
+
+.transport-date {
+  margin: 0 0 8px;
+  color: var(--warm);
+  font-weight: 900;
+}
+
+code {
+  border-radius: 6px;
+  padding: 0.12em 0.35em;
+  background: #ebe4d8;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+
+@media (max-width: 900px) {
+  .two-column,
+  .day-card {
+    grid-template-columns: 1fr;
+  }
+
+  .transport-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .site-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .section {
+    padding: 42px 0;
+  }
+
+  .day-facts,
+  .day-title-row,
+  .transport-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .day-image {
+    min-height: 210px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div>
+        <p class="eyebrow">Travel Plan Review</p>
+        <h1>荷兰 8/17–8/24 7天行程备忘录（自然 + 城市人文平衡版）</h1>
+        <p class="update-note">更新日期：2026-06-21</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Page sections">
+    <a href="#overview">Overview</a>
+    <a href="#itinerary">Itinerary</a>
+    <a href="#hotels">Hotels</a>
+    <a href="#transportation">Transportation</a>
+  </nav>
+
+  <main>
+    <section id="overview" class="section">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">Route</p>
+          <p><strong>Amsterdam 3 晚 → Otterlo/Arnhem 1 晚 → Texel 2 晚 → Amsterdam/Schiphol 1 晚</strong></p>
+<p>核心策略：</p>
+<ul>
+<li><strong>8/17–8/19 不租车</strong>：Amsterdam 市内 + Delft / The Hague 一日人文线，用火车、电车、步行即可。
+</li>
+<li><strong>8/20 早上取车</strong>：去 De Hoge Veluwe，重点是 <strong>Kröller-Müller Museum + 雕塑花园 + 白色自行车</strong>。
+</li>
+<li><strong>8/21 早上 Posbank / Veluwezoom</strong>：看 8 月紫色石楠；下午开到 Den Helder，坐 TESO ferry 上 Texel。
+</li>
+<li><strong>8/22 Texel 完整自然日</strong>：De Slufter、灯塔、Ecomare、海滩、骑行/徒步。
+</li>
+<li><strong>8/23 回 Amsterdam/Schiphol 还车</strong>：不要把 Texel 回程压到 8/24 飞机当天。
+</li>
+<li><strong>Zuid-Kennemerland 沙丘国家公园降级为备选</strong>：视觉和体验上与 Texel 有部分重复，不再作为主线。
+</li>
+</ul>
+<p>---</p>
+        </div>
+        <figure class="map-frame">
+          <img src="assets/maps/netherlands_aug17_24_revised_route_map.png" alt="Netherlands itinerary route map">
+          <figcaption>Route sketch from the itinerary source.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="itinerary" class="section muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Daily Plan</p>
+          <h2>Itinerary</h2>
+        </div>
+        <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>日期</th><th>住宿</th><th>主要安排</th><th>交通工具</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>8/17</strong></td><td>Amsterdam</td><td>抵达 Schiphol；入住；轻松走 Jordaan / Nine Streets / Canal Belt；晚上可选 canal cruise</td><td>Schiphol → Amsterdam 火车；市内步行/电车</td></tr>
+<tr><td><strong>8/18</strong></td><td>Amsterdam</td><td>博物馆日：Rijksmuseum、Van Gogh Museum、Anne Frank House（如果抢到票）；备选 National Holocaust Museum / Our Lord in the Attic</td><td>步行 + 电车/地铁</td></tr>
+<tr><td><strong>8/19</strong></td><td>Amsterdam</td><td><strong>Delft + The Hague 人文日</strong>：上午 Delft 老城 / Royal Delft；下午 The Hague 的 Mauritshuis 或 Escher in The Palace；傍晚 Hofvijver / Binnenhof 外围</td><td>Amsterdam ↔ Delft / The Hague 火车 + 步行/电车</td></tr>
+<tr><td><strong>8/20</strong></td><td>Otterlo 或 Arnhem</td><td>早上取车；De Hoge Veluwe 国家公园；白色自行车；<strong>Kröller-Müller Museum + 雕塑花园</strong></td><td>租车自驾</td></tr>
+<tr><td><strong>8/21</strong></td><td>Texel</td><td>Posbank / Veluwezoom 早上看石楠和短徒步；下午开到 Den Helder；TESO ferry 上 Texel</td><td>租车 + TESO 渡轮</td></tr>
+<tr><td><strong>8/22</strong></td><td>Texel</td><td>Texel 完整自然日：De Slufter、Texel Lighthouse、Ecomare、沙丘、海滩、骑行</td><td>岛上自行车/e-bike 或自驾</td></tr>
+<tr><td><strong>8/23</strong></td><td>Amsterdam 或 Schiphol</td><td>Texel 上午半天；ferry 回 Den Helder；开回 Amsterdam/Schiphol；还车</td><td>TESO 渡轮 + 租车</td></tr>
+<tr><td><strong>8/24</strong></td><td>飞回 SEA</td><td>从 Schiphol 飞回西雅图；建议提前 3 小时到机场</td><td>酒店 → 机场 taxi / shuttle / train</td></tr>
+      </tbody>
+    </table>
+  </div>
+        <div class="day-grid">
+          <article class="day-card">
+    <img class="day-image" src="assets/photos/day17_amsterdam_prinsengracht.jpg" alt="Amsterdam canal belt / Prinsengracht">
+    <div class="day-card-body">
+      <div class="day-title-row">
+        <p class="day-date">8/17</p>
+        <h3>抵达 Amsterdam，轻松适应时差</h3>
+      </div>
+      <dl class="day-facts">
+        <div><dt>Stay</dt><dd>Amsterdam</dd></div>
+        <div><dt>Transport</dt><dd>Schiphol → Amsterdam 火车；市内步行/电车</dd></div>
+      </dl>
+      <p class="summary-line">抵达 Schiphol；入住；轻松走 Jordaan / Nine Streets / Canal Belt；晚上可选 canal cruise</p>
+      <div class="markdown-body"><blockquote>参考图片：Amsterdam 运河带 / Prinsengracht。图片来源：<a href="https://commons.wikimedia.org/wiki/File:Prinsengracht.jpg">Wikimedia Commons</a>。</blockquote>
+<ul>
+<li>抵达 Schiphol 后进 Amsterdam 入住。
+</li>
+<li>下午/傍晚轻松走 <strong>Jordaan、Nine Streets、Canal Belt</strong>。
+</li>
+<li>晚上体力够就坐 <strong>canal cruise</strong>；不够就早睡。
+</li>
+<li>这天不要安排硬核博物馆，避免时差影响体验。
+</li>
+</ul>
+<p>更多信息：</p>
+<ul>
+<li><a href="https://whc.unesco.org/en/list/1349/">UNESCO Amsterdam Canal Ring</a>
+</li>
+<li><a href="https://www.de9straatjes.nl/en/">De 9 Straatjes 官方街区指南</a>
+</li>
+<li><a href="https://www.iamsterdam.com/en">I amsterdam 官方游客信息</a>
+</li>
+</ul></div>
+    </div>
+  </article>
+<article class="day-card">
+    <img class="day-image" src="assets/photos/day18_rijksmuseum.jpg" alt="Rijksmuseum exterior">
+    <div class="day-card-body">
+      <div class="day-title-row">
+        <p class="day-date">8/18</p>
+        <h3>Amsterdam 博物馆日</h3>
+      </div>
+      <dl class="day-facts">
+        <div><dt>Stay</dt><dd>Amsterdam</dd></div>
+        <div><dt>Transport</dt><dd>步行 + 电车/地铁</dd></div>
+      </dl>
+      <p class="summary-line">博物馆日：Rijksmuseum、Van Gogh Museum、Anne Frank House（如果抢到票）；备选 National Holocaust Museum / Our Lord in the Attic</p>
+      <div class="markdown-body"><blockquote>参考图片：Rijksmuseum 外观。图片来源：<a href="https://commons.wikimedia.org/wiki/File:South_facade_of_the_Rijksmuseum_Amsterdam_(DSCF0528).jpg">Wikimedia Commons</a>。</blockquote>
+<ul>
+<li><strong>上午：Rijksmuseum</strong>，预留 2.5–3 小时。
+</li>
+<li><strong>下午：Van Gogh Museum</strong>，预留 1.5–2 小时。
+</li>
+<li><strong>晚上/傍晚：Anne Frank House</strong>，如果抢到票就围绕它调整时间。
+</li>
+<li>如果 Anne Frank House 没抢到，可选：<strong>National Holocaust Museum</strong> 或 <strong>Our Lord in the Attic</strong>。
+</li>
+</ul>
+<p>更多信息：</p>
+<ul>
+<li><a href="https://www.rijksmuseum.nl/en">Rijksmuseum 官方信息</a>
+</li>
+<li><a href="https://www.vangoghmuseum.nl/en/visit/tickets-and-ticket-prices">Van Gogh Museum tickets and prices</a>
+</li>
+<li><a href="https://www.annefrank.org/en/museum/tickets/">Anne Frank House tickets</a>
+</li>
+</ul></div>
+    </div>
+  </article>
+<article class="day-card">
+    <img class="day-image" src="assets/photos/day19_delft_old_town.jpg" alt="Delft old town view">
+    <div class="day-card-body">
+      <div class="day-title-row">
+        <p class="day-date">8/19</p>
+        <h3>Delft + The Hague 城市人文日（替代 Haarlem + Zuid-Kennemerland）</h3>
+      </div>
+      <dl class="day-facts">
+        <div><dt>Stay</dt><dd>Amsterdam</dd></div>
+        <div><dt>Transport</dt><dd>Amsterdam ↔ Delft / The Hague 火车 + 步行/电车</dd></div>
+      </dl>
+      <p class="summary-line"><strong>Delft + The Hague 人文日</strong>：上午 Delft 老城 / Royal Delft；下午 The Hague 的 Mauritshuis 或 Escher in The Palace；傍晚 Hofvijver / Binnenhof 外围</p>
+      <div class="markdown-body"><blockquote>参考图片：Delft 老城视角。图片来源：<a href="https://commons.wikimedia.org/wiki/File:Delft_Blick_von_der_Nieuwe_Kerk_auf_die_Oude_Kerk_1.jpg">Wikimedia Commons</a>。</blockquote>
+<p>这一天的定位是：<strong>用 Delft 替代 Haarlem 的老城氛围，用 The Hague 补强博物馆和城市人文。</strong></p>
+<p>建议顺序：</p>
+<ol>
+<li><strong>上午 Amsterdam → Delft</strong>
+<ul>
+<li>Delft 老城：Markt、运河、老城街巷、Oude Kerk / Nieuwe Kerk 外观。
+</li>
+<li>如果想看更明确的人文点：去 <strong>Royal Delft</strong>，重点是 Delft Blue 陶瓷历史、工厂和博物馆。
+</li>
+<li>Royal Delft audio tour 有中文，适合轻松参观。
+</li>
+</ul>
+</li>
+<li><strong>中午 Delft 午餐 + 老城散步</strong>
+<ul>
+<li>Delft 比 The Hague 更像“小老城”，负责替代 Haarlem 的慢逛体验。
+</li>
+</ul>
+</li>
+<li><strong>下午 Delft → The Hague</strong>
+<ul>
+<li>优先：<strong>Mauritshuis</strong>，看荷兰黄金时代绘画。
+</li>
+<li>备选/加项：<strong>Escher in The Palace</strong>，更偏视觉错觉、版画、空间逻辑，不是建筑类。
+</li>
+<li>傍晚可走 <strong>Hofvijver / Binnenhof 外围</strong>，感受荷兰政治中心氛围。
+</li>
+</ul>
+</li>
+<li><strong>晚上 The Hague / Delft → Amsterdam</strong>
+<ul>
+<li>当天不需要租车，全程火车即可。
+</li>
+</ul>
+</li>
+</ol>
+<p>注意：<strong>Mauritshuis 会在 2026-08-24 至 2026-09-20 关闭</strong>；你的 8/19 仍在关闭前，但 *Girl with a Pearl Earring* 会在闭馆期间借展日本，出发前建议再核对官方 collection / ticket 页面。</p>
+<p>更多信息：</p>
+<ul>
+<li><a href="https://museum.royaldelft.com/en/plan-your-visit/visitors-information/">Royal Delft visitor information</a>
+</li>
+<li><a href="https://www.mauritshuis.nl/en/visit">Mauritshuis visit information</a>
+</li>
+<li><a href="https://www.escherinhetpaleis.nl/en/visit/opening-hours">Escher in The Palace opening hours</a>
+</li>
+<li><a href="https://denhaag.com/en">The Hague 官方游客信息</a>
+</li>
+</ul></div>
+    </div>
+  </article>
+<article class="day-card">
+    <img class="day-image" src="assets/photos/day20_kroller_muller_sculpture_garden.jpg" alt="Kroller-Muller sculpture garden">
+    <div class="day-card-body">
+      <div class="day-title-row">
+        <p class="day-date">8/20</p>
+        <h3>De Hoge Veluwe + Kröller-Müller Museum + 雕塑花园</h3>
+      </div>
+      <dl class="day-facts">
+        <div><dt>Stay</dt><dd>Otterlo 或 Arnhem</dd></div>
+        <div><dt>Transport</dt><dd>租车自驾</dd></div>
+      </dl>
+      <p class="summary-line">早上取车；De Hoge Veluwe 国家公园；白色自行车；<strong>Kröller-Müller Museum + 雕塑花园</strong></p>
+      <div class="markdown-body"><blockquote>参考图片：Kröller-Müller Museum 雕塑花园。图片来源：<a href="https://commons.wikimedia.org/wiki/File:KMM_Noguchi_02.JPG">Wikimedia Commons</a>。</blockquote>
+<ul>
+<li>早上从 Amsterdam 或 Schiphol 取车。
+</li>
+<li>开到 <strong>De Hoge Veluwe National Park / Otterlo entrance</strong>。
+</li>
+<li>建议先骑 <strong>White Bikes 白色自行车</strong>，体验森林、荒原、沙地的自然感。
+</li>
+<li>中午/下午重点放在 <strong>Kröller-Müller Museum + sculpture garden</strong>。
+</li>
+<li>官方建议 museum + sculpture garden 至少预留 3 小时；这天最好不要排太满。
+</li>
+<li>住宿：
+<ul>
+<li><strong>Otterlo</strong>：更自然、离公园近。
+</li>
+<li><strong>Arnhem</strong>：餐饮/酒店选择更多，第二天去 Posbank 更顺。
+</li>
+</ul>
+</li>
+</ul>
+<p>更多信息：</p>
+<ul>
+<li><a href="https://www.hogeveluwe.nl/en/plan-your-trip">De Hoge Veluwe plan your trip</a>
+</li>
+<li><a href="https://www.hogeveluwe.nl/en/discover-the-park">De Hoge Veluwe discover the park</a>
+</li>
+<li><a href="https://krollermuller.nl/en/opening-hours-and-prices">Kröller-Müller opening hours and prices</a>
+</li>
+<li><a href="https://krollermuller.nl/en/plan-your-visit">Kröller-Müller plan your visit</a>
+</li>
+</ul></div>
+    </div>
+  </article>
+<article class="day-card">
+    <img class="day-image" src="assets/photos/day21_posbank_veluwezoom.jpg" alt="Posbank / Veluwezoom landscape">
+    <div class="day-card-body">
+      <div class="day-title-row">
+        <p class="day-date">8/21</p>
+        <h3>Posbank / Veluwezoom → Den Helder → Texel</h3>
+      </div>
+      <dl class="day-facts">
+        <div><dt>Stay</dt><dd>Texel</dd></div>
+        <div><dt>Transport</dt><dd>租车 + TESO 渡轮</dd></div>
+      </dl>
+      <p class="summary-line">Posbank / Veluwezoom 早上看石楠和短徒步；下午开到 Den Helder；TESO ferry 上 Texel</p>
+      <div class="markdown-body"><blockquote>参考图片：Posbank / Veluwezoom 夏季景观。图片来源：<a href="https://commons.wikimedia.org/wiki/File:PosbankSummerLandscape_-_Flickr_-_Ruben_Holthuijsen.jpg">Wikimedia Commons</a>。</blockquote>
+<ul>
+<li>早上尽量早去 <strong>Posbank / Veluwezoom</strong>，避开人流和强光。
+</li>
+<li>8 月重点看紫色石楠和起伏视野，安排 1.5–2.5 小时短徒步即可。
+</li>
+<li>中午/下午开车去 <strong>Den Helder</strong>。
+</li>
+<li>坐 <strong>TESO ferry</strong> 上 Texel；车票一般不需要预约具体船班，但旺季要预留排队时间。
+</li>
+<li>晚上入住 Texel，推荐 <strong>De Koog</strong> 或 <strong>Den Burg</strong>。
+</li>
+</ul>
+<p>更多信息：</p>
+<ul>
+<li><a href="https://www.natuurmonumenten.nl/natuurgebieden/veluwezoom">Natuurmonumenten Veluwezoom</a>
+</li>
+<li><a href="https://www.teso.nl/en/time-tables/">TESO timetables</a>
+</li>
+<li><a href="https://www.teso.nl/en/planning-your-journey/coming-texel-first-time/">TESO first trip guidance</a>
+</li>
+</ul></div>
+    </div>
+  </article>
+<article class="day-card">
+    <img class="day-image" src="assets/photos/day22_texel_de_slufter.jpg" alt="De Slufter, Texel">
+    <div class="day-card-body">
+      <div class="day-title-row">
+        <p class="day-date">8/22</p>
+        <h3>Texel 完整自然日</h3>
+      </div>
+      <dl class="day-facts">
+        <div><dt>Stay</dt><dd>Texel</dd></div>
+        <div><dt>Transport</dt><dd>岛上自行车/e-bike 或自驾</dd></div>
+      </dl>
+      <p class="summary-line">Texel 完整自然日：De Slufter、Texel Lighthouse、Ecomare、沙丘、海滩、骑行</p>
+      <div class="markdown-body"><blockquote>参考图片：Texel De Slufter。图片来源：<a href="https://commons.wikimedia.org/wiki/File:Texel_De_Slufter_04.jpg">Wikimedia Commons</a>。</blockquote>
+<ul>
+<li><strong>上午：De Slufter</strong>，看盐沼、沙丘、潮汐水道、夏季植被。
+</li>
+<li><strong>中午/下午：Texel Lighthouse + 北部海滩</strong>。
+</li>
+<li><strong>下午备选：Ecomare</strong>，适合雨天或想看海豹救助/海洋生态。
+</li>
+<li>天气好时优先骑行，Texel 比 Zuid-Kennemerland 更适合做完整海岛自然日。
+</li>
+<li>晚上 De Koog 海边散步、吃饭。
+</li>
+</ul>
+<p>更多信息：</p>
+<ul>
+<li><a href="https://www.texel.net/en/">Visit Texel 官方游客信息</a>
+</li>
+<li><a href="https://vuurtorentexel.nl/en/">Texel Lighthouse</a>
+</li>
+<li><a href="https://www.ecomare.nl/en/">Ecomare</a>
+</li>
+</ul></div>
+    </div>
+  </article>
+<article class="day-card">
+    <img class="day-image" src="assets/photos/day23_teso_ferry_texel.jpg" alt="TESO ferry near Texel">
+    <div class="day-card-body">
+      <div class="day-title-row">
+        <p class="day-date">8/23</p>
+        <h3>Texel 半天 → 回 Amsterdam/Schiphol</h3>
+      </div>
+      <dl class="day-facts">
+        <div><dt>Stay</dt><dd>Amsterdam 或 Schiphol</dd></div>
+        <div><dt>Transport</dt><dd>TESO 渡轮 + 租车</dd></div>
+      </dl>
+      <p class="summary-line">Texel 上午半天；ferry 回 Den Helder；开回 Amsterdam/Schiphol；还车</p>
+      <div class="markdown-body"><blockquote>参考图片：Texel 附近的 TESO ferry。图片来源：<a href="https://commons.wikimedia.org/wiki/File:Texel_-_De_Hors_-_View_East_towards_TESO_Ferries.jpg">Wikimedia Commons</a>。</blockquote>
+<ul>
+<li>上午补 Texel：海滩、短骑行、De Muy / Oudeschild / Den Burg 小镇。
+</li>
+<li>中午前后 ferry 回 Den Helder。
+</li>
+<li>下午开回 Amsterdam 或 Schiphol 还车。
+</li>
+<li>晚上住 Schiphol 或机场交通方便区域，降低 8/24 飞机风险。
+</li>
+</ul>
+<p>更多信息：</p>
+<ul>
+<li><a href="https://www.teso.nl/en/time-tables/">TESO timetables</a>
+</li>
+<li><a href="https://www.teso.nl/en/planning-your-journey/coming-texel-first-time/">TESO first trip guidance</a>
+</li>
+<li><a href="https://www.texel.net/en/">Visit Texel 官方游客信息</a>
+</li>
+<li><a href="https://www.schiphol.nl/en/">Schiphol 官方信息</a>
+</li>
+</ul></div>
+    </div>
+  </article>
+<article class="day-card">
+    <img class="day-image" src="assets/photos/day24_schiphol_terminal.jpg" alt="Amsterdam Schiphol terminal">
+    <div class="day-card-body">
+      <div class="day-title-row">
+        <p class="day-date">8/24</p>
+        <h3>飞回 Seattle</h3>
+      </div>
+      <dl class="day-facts">
+        <div><dt>Stay</dt><dd>飞回 SEA</dd></div>
+        <div><dt>Transport</dt><dd>酒店 → 机场 taxi / shuttle / train</dd></div>
+      </dl>
+      <p class="summary-line">从 Schiphol 飞回西雅图；建议提前 3 小时到机场</p>
+      <div class="markdown-body"><blockquote>参考图片：Amsterdam Schiphol terminal。图片来源：<a href="https://commons.wikimedia.org/wiki/File:Amsterdam_Schiphol_0018.jpg">Wikimedia Commons</a>。</blockquote>
+<ul>
+<li>国际航班建议提前 3 小时到 Schiphol。
+</li>
+<li>当天不安排远距离活动。
+</li>
+</ul>
+<p>更多信息：</p>
+<ul>
+<li><a href="https://www.schiphol.nl/en/departures/">Schiphol departures</a>
+</li>
+<li><a href="https://www.schiphol.nl/en/">Schiphol 官方信息</a>
+</li>
+</ul>
+<p>---</p></div>
+    </div>
+  </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="hotels" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Lodging</p>
+          <h2>Hotels TBD</h2>
+        </div>
+        <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>日期</th><th>推荐住哪里</th><th>说明</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>8/17–8/19</td><td>Amsterdam</td><td>当前酒店偏好：Pillows 适合连续 3 晚 base；如果 Hotel TwentySeven 可用 Hilton Free Night Certificate，可安排 1 晚 splurge；Canal House 作为运河区备选；不要租车住市区</td></tr>
+<tr><td>8/20</td><td>Otterlo 或 Arnhem</td><td>Otterlo 更自然、离 De Hoge Veluwe 近；Arnhem 餐饮/酒店选择更多，去 Posbank 顺</td></tr>
+<tr><td>8/21–8/22</td><td>Texel</td><td>De Koog 最方便，靠海且餐厅多；Den Burg 更安静居中</td></tr>
+<tr><td>8/23</td><td>Amsterdam 或 Schiphol</td><td>为 8/24 回 SEA 降低风险，建议住机场附近或方便去机场的区域</td></tr>
+      </tbody>
+    </table>
+  </div>
+        <div class="content-panel">
+          <h3>阿姆斯特丹酒店对比备忘录（8/17–8/24 荷兰行程）</h3>
+<p><strong>连续住 3 晚的默认首选仍是 Pillows Grand Boutique Hotel Maurits at the Park；如果 Hilton Free Night Certificate 可以用于 Hotel TwentySeven，则 TwentySeven 变成很强的 1 晚 splurge 选择。</strong></p>
+<p>原因：Pillows 截图里 <strong>95,000 points/night</strong>，酒店较新、安静、靠 Oosterpark，设施完整，停车条件也最好，适合作为 8/17–8/20 的连续住宿 base。</p>
+<p>但如果 <strong>Hotel TwentySeven 可以用 Hilton Free Night Certificate</strong>，它的成本判断要重算：原本 150,000 points/night 看起来偏贵，但用 Free Night Certificate 时，实际现金/积分支出明显下降，房间体验又最有 wow factor，所以适合安排 1 晚特别体验。</p>
+<p>如果更想要阿姆斯特丹经典运河区体验，不带车住市区，可以选 <strong>Canal House</strong>。</p>
+<p>如果追求顶级服务和经典奢华，且不介意积分成本，可以选 <strong>Waldorf Astoria Amsterdam</strong>。</p>
+<p>---</p>
+<h3>推荐排序</h3>
+<ol>
+<li><strong>Pillows Grand Boutique Hotel Maurits at the Park</strong> — 连续 3 晚 base 最均衡
+</li>
+<li><strong>Hotel TwentySeven</strong> — 如果可用 Hilton Free Night Certificate，适合 1 晚 splurge
+</li>
+<li><strong>Canal House</strong> — 运河区/Jordaan 体验最好，适合不带车
+</li>
+<li><strong>Waldorf Astoria Amsterdam</strong> — 酒店本身最好，但 390k points/night 太贵
+</li>
+</ol>
+<p>---</p>
+<h3>核心对比表</h3>
+<div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>酒店</th><th>当前成本 / 积分判断</th><th>地理位置</th><th>方便程度</th><th>停车</th><th>新旧程度 / 房间感觉</th><th>设施</th><th>适合情况</th><th>主要缺点</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Pillows Grand Boutique Hotel Maurits at the Park, an SLH Hotel</strong></td><td><strong>95,000 points/night</strong></td><td>Oosterpark / Amsterdam East，靠公园</td><td>到核心景区需电车/地铁/Taxi；到市中心或中央车站约 15–20 分钟公共交通</td><td><strong>四家里最好</strong>；有 valet/地下车库/EV charging，适合后续租车衔接</td><td><strong>最新、最现代清爽</strong>；历史建筑翻新，整体更像安静 park-side retreat</td><td>餐厅、gym、sauna、rooftop / park view；无大型泳池</td><td>想住安静、新、设施好、性价比高端</td><td>不在 Canal Belt 核心区，步行去 Anne Frank / Jordaan / Nine Streets 不如 Canal House 顺</td></tr>
+<tr><td><strong>Canal House, an SLH Hotel</strong></td><td><strong>100,000 points/night</strong></td><td>Keizersgracht / Jordaan / Nine Streets 附近</td><td><strong>步行体验很好</strong>；去 Anne Frank House、运河区、Nine Streets 很方便</td><td><strong>停车最弱</strong>；基本不适合带车入住</td><td>17 世纪 canal house boutique；复古、有设计感，但房间可能偏小/偏暗</td><td>酒吧、lounge、花园；设施不如 Pillows / Waldorf 完整</td><td>想要最阿姆斯特丹的运河区体验，且 8/17–8/20 不租车</td><td>停车不方便；设施较 boutique，不是 resort 型豪华</td></tr>
+<tr><td><strong>Waldorf Astoria Amsterdam</strong></td><td><strong>390,000 points/night</strong></td><td>Herengracht 运河边，市中心但相对安静</td><td>位置非常平衡：去 Rijksmuseum、花市、Dam、Anne Frank 都方便</td><td>valet parking；但贵</td><td>17–18 世纪运河宫殿，经典顶奢，维护好，但不是“新酒店”</td><td>Guerlain Spa、室内泳池、gym、花园、餐厅；四家里最完整</td><td>想住经典顶奢、服务稳定、运河边豪华酒店</td><td><strong>积分价太高</strong>；390k/night 和其他三家比性价比很低</td></tr>
+<tr><td><strong>Hotel TwentySeven, an SLH Hotel</strong></td><td><strong>150,000 points/night；若可用 Hilton Free Night Certificate，1 晚价值显著上升</strong></td><td>Dam Square 正中心，Royal Palace 对面</td><td>地点最中心，Rokin 地铁很近，但外面最游客、最热闹</td><td>valet parking；Dam Square 一带开车/上下车会比较烦</td><td>16 间 suite-only boutique，房间硬件最夸张，最有 wow factor</td><td>Butler、Michelin 餐厅 Bougainville、24h room service；但无大型公共设施</td><td>想用 Free Night Certificate 做 1 晚超豪华套房体验 / 纪念日 splurge</td><td>不太适合连续住多晚；外部环境 hectic，游客多，车不方便</td></tr>
+      </tbody>
+    </table>
+  </div>
+<p>---</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="transportation" class="section muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Movement</p>
+          <h2>Transportation</h2>
+        </div>
+        <div class="transport-grid">
+    <article>
+          <p class="transport-date"><strong>8/17</strong></p>
+          <h3>Amsterdam</h3>
+          <p>Schiphol → Amsterdam 火车；市内步行/电车</p>
+        </article>
+<article>
+          <p class="transport-date"><strong>8/18</strong></p>
+          <h3>Amsterdam</h3>
+          <p>步行 + 电车/地铁</p>
+        </article>
+<article>
+          <p class="transport-date"><strong>8/19</strong></p>
+          <h3>Amsterdam</h3>
+          <p>Amsterdam ↔ Delft / The Hague 火车 + 步行/电车</p>
+        </article>
+<article>
+          <p class="transport-date"><strong>8/20</strong></p>
+          <h3>Otterlo 或 Arnhem</h3>
+          <p>租车自驾</p>
+        </article>
+<article>
+          <p class="transport-date"><strong>8/21</strong></p>
+          <h3>Texel</h3>
+          <p>租车 + TESO 渡轮</p>
+        </article>
+<article>
+          <p class="transport-date"><strong>8/22</strong></p>
+          <h3>Texel</h3>
+          <p>岛上自行车/e-bike 或自驾</p>
+        </article>
+<article>
+          <p class="transport-date"><strong>8/23</strong></p>
+          <h3>Amsterdam 或 Schiphol</h3>
+          <p>TESO 渡轮 + 租车</p>
+        </article>
+<article>
+          <p class="transport-date"><strong>8/24</strong></p>
+          <h3>飞回 SEA</h3>
+          <p>酒店 → 机场 taxi / shuttle / train</p>
+        </article>
+  </div>
+        <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>路段</th><th>推荐方式</th><th>距离/时间</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Schiphol → Amsterdam</td><td>火车</td><td>约 15–20 分钟</td></tr>
+<tr><td>Amsterdam → Delft</td><td>火车</td><td>约 1 小时左右，视车次而定</td></tr>
+<tr><td>Delft → The Hague</td><td>火车/电车</td><td>约 10–20 分钟，视路线而定</td></tr>
+<tr><td>The Hague → Amsterdam</td><td>火车</td><td>约 50–60 分钟，视车次而定</td></tr>
+<tr><td>Amsterdam → De Hoge Veluwe / Otterlo</td><td>租车自驾</td><td>约 1 小时 15 分</td></tr>
+<tr><td>De Hoge Veluwe → Posbank / Veluwezoom</td><td>租车自驾</td><td>约 35–40 分钟</td></tr>
+<tr><td>Posbank → Den Helder</td><td>租车自驾</td><td>约 2–2.5 小时</td></tr>
+<tr><td>Den Helder → Texel</td><td>TESO 渡轮</td><td>海上约 20 分钟</td></tr>
+<tr><td>Texel → Amsterdam/Schiphol</td><td>TESO 渡轮 + 自驾</td><td>半天内可完成，但不要压到 8/24 飞机当天</td></tr>
+      </tbody>
+    </table>
+  </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
